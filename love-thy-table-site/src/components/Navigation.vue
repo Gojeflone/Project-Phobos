@@ -1,6 +1,6 @@
 <template>
-    <div id="navigation" class="container-fluid">
-        <div class="row justify-content-between h-100">
+    <div id="navigation" class="row">
+        <div class="col-12 d-flex justify-content-between h-100">
             <div class="d-flex align-items-center h-100">
                 <a class="table-header" href="/">
                     <h2 class="pl-3 mb-0">The TABLE</h2>
@@ -43,7 +43,7 @@ export default {
     text-decoration: none;
 
     > h2 {
-        color: #212529;
+        color: darken(white, 50%);
     }
     
 }

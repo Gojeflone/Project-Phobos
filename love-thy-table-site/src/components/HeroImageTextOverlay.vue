@@ -1,7 +1,7 @@
 <template>
-  <div id="hero-image" class="container-fluid">
+  <div id="hero-image" class="col-12">
     <div class="row"> 
-      <div class="hero-wrapper col-12 pl-0 pr-0">
+      <div class="hero-wrapper ">
         <img class="img-fluid" src="../assets/oak_wood_plank.jpg" />
         <h1 class="hero-text position-absolute mt-0 mb-0">Biography</h1> 
       </div> 
