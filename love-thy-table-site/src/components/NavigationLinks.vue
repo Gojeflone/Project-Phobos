@@ -33,6 +33,7 @@ a {
     color: white;
     font-weight: 600;
     font-size: 20px;
+    text-decoration: none;
 
     &:hover {
         text-decoration: none;
