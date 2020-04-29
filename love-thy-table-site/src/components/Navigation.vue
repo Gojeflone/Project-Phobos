@@ -1,42 +1,51 @@
 <template>
     <div id="navigation" class="container-fluid">
-        <div class="row justify-content-between">
-            <div>
+        <div class="row justify-content-between h-100">
+            <div class="d-flex align-items-center h-100">
                 <a class="table-header" href="/">
-                    <h1>The TABLE</h1>
+                    <h2 class="pl-3 mb-0">The TABLE</h2>
                 </a>
             </div>
-            <div class="col navigation-links">
-                
-            </div>
-
+            <navigation-links />
         </div>
 
     </div>
 </template>
 
 <script>
+import NavigationLinks from './NavigationLinks.vue'
+
 export default {
     name: 'Navigation',
+    components: {
+        NavigationLinks,
+    }
     
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 #navigation {
     background-color: #546E7A;
-    height: 60px;
+    height: 50px;
 
 }
 
 .table-header {
-    color: #ffffff;
+
+    > h2 {
+        color: #ffffff;
+    }
 }
 
 .table-header:hover {
     text-decoration: none;
-    color: #212529;
+
+    > h2 {
+        color: #212529;
+    }
+    
 }
 
 

@@ -1,23 +1,16 @@
 <template>
   <div id="app">
     <navigation />
-    <hero-image />
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import HeroImage from './components/HeroImage.vue'
 import Navigation from './components/Navigation.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    HeroImage,
     Navigation,
   }
 }
