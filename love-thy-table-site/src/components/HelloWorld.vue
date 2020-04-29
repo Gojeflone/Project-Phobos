@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
           <div class="col-12">
               <h1>Bootstrap Might Work </h1>
