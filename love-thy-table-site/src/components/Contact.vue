@@ -42,6 +42,11 @@ a {
     }
 }
 
+.row {
+    background-color: #f7f7f7;
+    margin-bottom: 200px;
+}
+
 
 
 </style>

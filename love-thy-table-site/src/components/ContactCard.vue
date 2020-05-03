@@ -1,5 +1,5 @@
 <template>
-    <div class="col-12 col-lg-8 ml-auto mt-2 mb-2 mr-auto overflow-hidden"> 
+    <div class="contact-card col-12 col-lg-8 ml-auto mt-3 mb-3 mr-auto overflow-hidden"> 
         <div class="row align-items-center">
             <div class="col-12 col-lg-4">
                 <img :src="require('@/assets/' + imageSource + '')" class="img-fluid" />
@@ -47,6 +47,64 @@ h1 {
 }
 
 
+
+
+// Magic parallax mixins
+
+$parallax-perspective : 1 !default;
+$parallax-element     : "body" !default;
+$parallax-ios         : true !default;
+
+@mixin parallax-init(
+  $perspective  : $parallax-perspective,
+  $element      : $parallax-element,
+  $parallax-ios : $parallax-ios
+  ) {
+  @if $element == "body" {
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+  }
+  #{$element} {
+    overflow: auto;
+    perspective: $perspective * 1px;
+    transform-style: preserve-3d;
+    // Allows for smooth scrolling but disables parallax effects.
+    @if $parallax-ios == false {
+      -webkit-overflow-scrolling: touch;
+    }
+    // Preserve 3D
+    &, * {
+      transform-style: preserve-3d;
+    }
+  }
+}
+
+@mixin parallax(
+  $distance    : 0,
+  $perspective : $parallax-perspective
+  ) {
+  transform:
+    translateZ($distance * $perspective * 1px)
+    scale(abs($distance - 1))
+  ;
+  z-index: $distance * 1000;
+}
+
+// End of magic parallax mixins
+
+@include parallax-init;
+
+.contact-card {
+    background-color: #fff;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.175);
+    @include parallax(.2)
+
+}
 
 
 </style>
