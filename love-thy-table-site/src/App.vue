@@ -2,7 +2,9 @@
   <div id="app" class="container-fluid">
     <navigation />
     <router-view></router-view>
+     
     <Footer />
+
   </div>
 </template>
 

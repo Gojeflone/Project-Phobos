@@ -24,12 +24,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
 .hero-text {
+    font-family: 'Oswald', sans-serif;
     font-size: 10rem;
     color: white;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
 
     @media (max-width: 992px) {
       font-size: 5rem;

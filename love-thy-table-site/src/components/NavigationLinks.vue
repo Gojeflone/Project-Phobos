@@ -29,7 +29,6 @@ export default {
 <style lang="scss" scoped>
 
 a {
-    font-family: Bitter;
     color: white;
     font-weight: 600;
     font-size: 20px;

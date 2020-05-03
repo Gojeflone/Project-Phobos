@@ -1,8 +1,8 @@
 <template>
     <div class="footer row">
         <div class="col-12 col-lg-8 offset-lg-2">
-            <div class="row">
-                <div class="nav-links col-4">
+            <div class="row h-100 align-items-center">
+                <div class="nav-links col-4 pt-2">
                     <div class="home-link pl-3 pr-3">
                         <p>
                             <router-link to="/">Home</router-link>
@@ -29,17 +29,21 @@
                     </div>
                     
                 </div>
-                <div class="col-4">
-                    
-                </div>
+                <social-links />
+                
             </div>
         </div>
     </div>
 </template>
 
 <script>
+import SocialLinks from './SocialLinks.vue'
+
 export default {
-    name: 'Footer'    
+    name: 'Footer',
+    components: {
+        SocialLinks,
+    }
 }
 </script>
 
@@ -53,6 +57,14 @@ export default {
     background-color: rgba(0,0,0,0.15);
     a {
         color: white;
+    }
+}
+
+a {
+    color: inherit;
+
+    &:hover {
+        opacity: 0.8;
     }
 }
 

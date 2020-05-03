@@ -9,7 +9,19 @@ import App from './App.vue'
 import VueRouter from 'vue-router'
 import router from './router.js'
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { faFacebook } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faTshirt } from '@fortawesome/free-solid-svg-icons'
 
+library.add(faFacebook)
+library.add(faInstagram)
+library.add(faTwitter)
+library.add(faTshirt)
+ 
+Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 
 Vue.config.productionTip = false
@@ -18,14 +30,16 @@ Vue.config.productionTip = false
 
 // Installs Router
 Vue.use(VueRouter)
-new Vue({
-  router: router,
-  components : {App},
-  el: "#app",
-  render: h => h(App),
-}).$mount('#app')
-
 // Installs BootstrapVue
 Vue.use(BootstrapVue)
 // Optionally installs the BootstrapVue icon components plugin
 Vue.use(IconsPlugin)
+new Vue({
+  router: router,
+  components : {
+    app: App
+  },
+  el: "#app",
+  render: h => h('app'),
+})
+
