@@ -10,3 +10,4 @@ First and foremost, you're going to need an IDE that works well with Vue JS. I t
 * Navigate to the project folder via the Terminal and run `npm install` to install dependencies
 * Run `npm run serve`
 * Navigate to the URL provided so that you can see the site
+* Take a ticket off the Asana dashboard, assign it to yourself and get to work using Vue components
