@@ -1,19 +1,13 @@
 <template>
     <div class="navigation-links d-flex align-items-center">
-        <div class="home-link pl-1 pr-1 pl-lg-3 pr-lg-3">
-            <p>
+        <div class="home-link link pl-1 pr-1 pl-lg-3 pr-lg-3">
                 <router-link to="/">Home</router-link>
-            </p>
         </div>
         <div class="biography-link pl-1 pr-1 pl-lg-3 pr-lg-3">
-            <p>
                 <router-link to="/Bio">Biography</router-link>
-            </p>
         </div>
         <div class="contact-link pl-1 pr-1 pl-lg-3 pr-lg-3">
-            <p>
                 <router-link to="/Contact">Contact</router-link>
-            </p>
         </div>
     </div>
     
@@ -29,10 +23,15 @@ export default {
 <style lang="scss" scoped>
 
 a {
+    //text-decoration: none;
+    cursor: pointer;
     color: white;
-    font-weight: 600;
-    font-size: 20px;
-    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+
+    @media (max-width: 992px) {
+        font-size: 16px;
+    }
 
     &:hover {
         text-decoration: none;
@@ -47,14 +46,17 @@ a {
 
 }
 
-p {
-    margin-bottom: 0;
+.router-link-active {
+    text-decoration: none;
 }
 
+  
+
+
+
 .router-link-exact-active {
-    border-bottom: 1px solid white;
-    border-width: 15px;
-    margin-bottom: -15px;
+    border-bottom: 5px solid white;
+    //margin-bottom: -15px;
     }
 
 </style>

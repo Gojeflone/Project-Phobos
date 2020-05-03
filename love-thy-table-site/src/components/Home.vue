@@ -52,8 +52,7 @@ export default {
 </script>
 
 <style lang="scss">
-
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&display=swap');
 
 // Magic parallax mixins
 
