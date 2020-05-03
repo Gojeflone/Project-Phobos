@@ -1,6 +1,6 @@
 <template>
     <div class="row">
-        <hero-image-text-overlay />
+        <hero-image-text-overlay title="Biography"></hero-image-text-overlay>
         <div class="col-12 col-lg-8 m-auto mt-2 text-lg-left">
             <hr>
             <h1>Who We Are</h1>

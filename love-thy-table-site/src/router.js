@@ -1,8 +1,8 @@
 import Vue from "vue";
 import Router from "vue-router";
-import App from "./App.vue";
 import Home from "./components/Home.vue";
 import Biography from "./components/Biography";
+import Contact from "./components/Contact";
 
 // Installs Router
 Vue.use(Router);
@@ -22,7 +22,7 @@ export default new Router({
         {
             path: "/Contact",
             name: "contact",
-            component: App
+            component: Contact
         }
     ]
 })

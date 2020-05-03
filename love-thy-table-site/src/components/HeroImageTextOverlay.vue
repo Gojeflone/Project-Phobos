@@ -1,9 +1,9 @@
 <template>
   <div id="hero-image" class="col-12">
     <div class="row"> 
-      <div class="hero-wrapper ">
+      <div class="hero-wrapper col-12 pl-0 pr-0">
         <img class="img-fluid" src="../assets/oak_wood_plank.jpg" />
-        <h1 class="hero-text position-absolute mt-0 mb-0">Biography</h1> 
+        <h1 class="hero-text position-absolute mt-0 mb-0">{{ title }}</h1> 
       </div> 
       
     </div>   
@@ -13,6 +13,12 @@
 <script>
 export default {
     name: 'HeroImageTextOverlay',
+    props: ['title'],
+    data: function() {
+      return {
+        bio: 'Biography'
+      };
+    }
     
 }
 </script>
@@ -24,6 +30,10 @@ export default {
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @media (max-width: 992px) {
+      font-size: 5rem;
+    }
 }
 
 .hero-wrapper {
