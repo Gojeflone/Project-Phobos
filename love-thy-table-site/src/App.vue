@@ -30,7 +30,13 @@ export default {
   color: #2c3e50;
 }
 
+html, body {
+  //overflow-x: hidden;
+}
+
 body {
+  //position: relative;
   background-color: #f7f7f7;
+  
 }
 </style>

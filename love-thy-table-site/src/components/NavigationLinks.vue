@@ -1,16 +1,16 @@
 <template>
     <div class="navigation-links d-flex align-items-center">
-        <div class="home-link pl-3 pr-3">
+        <div class="home-link pl-1 pr-1 pl-lg-3 pr-lg-3">
             <p>
                 <router-link to="/">Home</router-link>
             </p>
         </div>
-        <div class="biography-link pl-3 pr-3">
+        <div class="biography-link pl-1 pr-1 pl-lg-3 pr-lg-3">
             <p>
                 <router-link to="/Bio">Biography</router-link>
             </p>
         </div>
-        <div class="contact-link pr-3 pl-3">
+        <div class="contact-link pl-1 pr-1 pl-lg-3 pr-lg-3">
             <p>
                 <router-link to="/Contact">Contact</router-link>
             </p>

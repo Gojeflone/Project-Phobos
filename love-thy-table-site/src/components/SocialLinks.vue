@@ -1,6 +1,6 @@
 <template>
     <div class="col-4">
-        <div class="row">
+        <div class="row justify-content-center align-items-center">
             <div class="p-2">
                 <a href="https://www.facebook.com/lovethytable" target="_blank">
                     <font-awesome-icon :icon="['fab', 'facebook']" size="2x" />

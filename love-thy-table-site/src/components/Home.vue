@@ -122,6 +122,16 @@ $parallax-ios         : true !default;
             padding-left: 0;
         }
     }
+
+    @media (max-width: 1200px) {
+        top: 10%;
+    }
+
+    @media (max-width: 992px) {
+        position: relative;
+        top: 0;
+        @include parallax(0);
+    }
 }
 
 </style>

@@ -21,7 +21,7 @@
                 </div>
                 <div class="col-4">
                     <div class="row">
-                        <div class="col-8 offset-2">
+                        <div class="col-12 col-lg-6 m-auto">
                             <router-link to="/">
                             <img src="../assets/the_table.png"  class="img-fluid" />
                             </router-link>
@@ -49,6 +49,7 @@ export default {
 
 <style lang="scss" scoped>
 .footer {
+    margin-top: 100px;
     background-color: #546E7A;
     min-height: 200px;
 }
