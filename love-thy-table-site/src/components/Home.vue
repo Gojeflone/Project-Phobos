@@ -46,7 +46,8 @@ export default {
     name: 'Home',
     components: {
         HeroImage,
-    }
+    },
+    
     
 }
 </script>

@@ -20,6 +20,9 @@ export default {
     components: {
         HeroImageTextOverlay,
         ContactCard
+    },
+    metaInfo: {
+      title: 'Contact'
     }
 }
 </script>

@@ -17,7 +17,11 @@ export default {
   components: {
     Navigation,
     Footer
-  }
+  },
+  metaInfo: {
+      title: 'Home',
+      titleTemplate: '%s | The TABLE'
+    }
 }
 </script>
 

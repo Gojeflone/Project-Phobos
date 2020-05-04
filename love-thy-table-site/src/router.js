@@ -8,21 +8,35 @@ import Contact from "./components/Contact";
 Vue.use(Router);
 
 export default new Router({
+    scrollBehavior () {
+        return { x: 0, y: 0}
+    },
     routes: [
         {
             path: "/",
             name: "home",
-            component: Home
+            component: Home,
+            meta: {
+                title: 'Home - The Table'
+            },            
         },
         {
             path: "/Bio",
             name: "biography",
-            component: Biography
+            component: Biography,
+            meta: {
+                title: 'Biography - The Table'
+            },
         },
         {
             path: "/Contact",
             name: "contact",
-            component: Contact
+            component: Contact,
+            meta: {
+                title: 'Contact - The Table'
+            }
         }
-    ]
+    ],
+    
 })
+

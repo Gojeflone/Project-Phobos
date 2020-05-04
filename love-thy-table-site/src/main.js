@@ -8,6 +8,7 @@ import App from './App.vue'
 // Import Router files
 import VueRouter from 'vue-router'
 import router from './router.js'
+import VueMeta from 'vue-meta'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -34,6 +35,9 @@ Vue.use(VueRouter)
 Vue.use(BootstrapVue)
 // Optionally installs the BootstrapVue icon components plugin
 Vue.use(IconsPlugin)
+// Vue Meta for editing head tags
+Vue.use(VueMeta)
+
 new Vue({
   router: router,
   components : {

@@ -133,6 +133,9 @@ export default {
     name: "Biography",
     components: {
         HeroImageTextOverlay
+    },
+    metaInfo: {
+      title: 'Bio'
     }
 }
 </script>
